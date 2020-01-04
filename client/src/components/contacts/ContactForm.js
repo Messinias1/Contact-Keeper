@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
 import ContactContext from "../../context/contact/contactContext";
-import { CLEAR_CURRENT } from "../../context/types";
 
 const ContactForm = () => {
   const contactContext = useContext(ContactContext);
@@ -58,7 +57,7 @@ const ContactForm = () => {
       </h2>
       <input
         type="text"
-        placeholder="name"
+        placeholder="Name"
         name="name"
         value={name}
         onChange={onChange}
